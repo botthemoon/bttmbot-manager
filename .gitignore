@@ -406,3 +406,4 @@ pip-selfcheck.json
 *.session
 *.session-journal
 *.json
+logs/

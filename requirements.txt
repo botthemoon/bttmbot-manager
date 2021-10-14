@@ -6,10 +6,8 @@ cryptg
 websocket-client
 schedule
 datetime
-flask
-flask-restplus
 pymongo
-werkzeug==0.16.1
+docker
 
 # passivbot
 -r passivbot/requirements.txt
