@@ -10,4 +10,4 @@ pymongo
 docker
 
 # passivbot
--r passivbot/requirements.txt
+-r passivbot/requirements_liveonly.txt
