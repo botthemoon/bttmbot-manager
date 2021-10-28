@@ -14,7 +14,7 @@ setup(
     description="Passivbot Manager Library",
     author="BTM",
     url="https://github.com/botthemoon/passivbot-manager",
-    packages=["passivbot_manager"],
+    packages=["src"],
     include_package_data=True,
     install_requires=requires,
     zip_safe=True,
