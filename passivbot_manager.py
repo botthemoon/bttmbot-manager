@@ -1,4 +1,4 @@
-from src.services.dockermanager import create_passivbot_image, run_bot_container, is_image_created
+from src.services.dockermanager import run_bot_container, is_image_created, create_passivbot_image
 
 
 def run_passivbot(market_type: str, symbol: str, userbot_name: str, userbot_key: str, userbot_secret: str):

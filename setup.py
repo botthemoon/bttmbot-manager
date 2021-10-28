@@ -10,11 +10,11 @@ with open("passivbot/requirements_liveonly.txt") as f:
 
 setup(
     name="passivbot_manager",
-    version="0.1.3",
+    version="0.1.4",
     description="Passivbot Manager Library",
     author="BTM",
     url="https://github.com/botthemoon/passivbot-manager",
-    packages=find_packages(),
+    packages=["passivbot_manager"],
     include_package_data=True,
     install_requires=requires,
     zip_safe=True,
