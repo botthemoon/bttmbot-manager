@@ -3,7 +3,6 @@ from datetime import datetime
 
 
 class Utils:
-
     @staticmethod
     def get_timestamp() -> int:
         return int(time.time() * 1000)

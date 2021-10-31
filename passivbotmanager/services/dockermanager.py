@@ -1,7 +1,7 @@
 import docker
 
-from src.services.logger import logger
-from src.settings import docker_image_tag
+from passivbotmanager.services.logger import logger
+from passivbotmanager.settings import docker_image_tag
 
 client = docker.from_env()
 
@@ -25,7 +25,9 @@ def create_passivbot_image():
 
 
 def run_bot_container(env: dict, name: str):
-    bot_container = client.containers.run(docker_image_tag, environment=env, detach=True, name=name)
+    bot_container = client.containers.run(
+        docker_image_tag, environment=env, detach=True, name=name
+    )
     return bot_container.id
 
 

@@ -1,11 +1,12 @@
 import logging
 import sys
 
-from src import settings
+from passivbotmanager import settings
 
-datefmt = '%Y-%m-%d %H:%M:%S'
-logFormatter = logging.Formatter("[%(levelname)s] [%(threadName)s] %(asctime)s - %(message)s",
-                                 datefmt=datefmt)
+datefmt = "%Y-%m-%d %H:%M:%S"
+logFormatter = logging.Formatter(
+    "[%(levelname)s] [%(threadName)s] %(asctime)s - %(message)s", datefmt=datefmt
+)
 level = logging.getLevelName(settings.log_level)
 
 logger = logging.getLogger(__name__)

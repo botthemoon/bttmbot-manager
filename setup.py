@@ -1,7 +1,9 @@
 from setuptools import find_packages, setup
 
+requires = []
+
 with open("requirements.txt") as f:
-    requires = f.read().splitlines()
+    requires.extend(f.read().splitlines())
     requires = requires[: len(requires) - 2]
 
 with open("passivbot/requirements_liveonly.txt") as f:
@@ -10,12 +12,11 @@ with open("passivbot/requirements_liveonly.txt") as f:
 
 setup(
     name="passivbot_manager",
-    version="0.1.4",
+    version="0.1.5",
     description="Passivbot Manager Library",
     author="BTM",
+    license="",
     url="https://github.com/botthemoon/passivbot-manager",
-    packages=["src"],
-    include_package_data=True,
+    packages=find_packages(),
     install_requires=requires,
-    zip_safe=True,
 )
