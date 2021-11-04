@@ -1,2 +1,2 @@
-from services.dockermanager import *
-from services.logger import *
+from .services.dockermanager import *
+from .services.logger import *
