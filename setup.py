@@ -11,7 +11,7 @@ with open("passivbot/requirements_liveonly.txt") as f:
     requires.extend(requires_passivbot)
 
 setup(
-    name="passivbot_manager",
+    name="passivbot-manager",
     version="0.1.5",
     description="Passivbot Manager Library",
     author="BTM",
