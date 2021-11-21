@@ -9,4 +9,4 @@ datetime
 pymongo
 docker
 # passivbot
--r passivbot/requirements_liveonly.txt
+# -r passivbot/requirements_liveonly.txt
