@@ -1,7 +1,7 @@
 import logging
 import sys
 
-from passivbotmanager import settings
+from bttmbotmanager import settings
 
 datefmt = "%Y-%m-%d %H:%M:%S"
 logFormatter = logging.Formatter(

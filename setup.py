@@ -6,7 +6,7 @@ with open("requirements.txt") as f:
     requires.extend(f.read().splitlines())
     requires = requires[: len(requires) - 2]
 
-with open("passivbot/requirements_liveonly.txt") as f:
+with open("bttmbot/requirements_liveonly.txt") as f:
     requires_passivbot = f.read().splitlines()
     requires.extend(requires_passivbot)
 

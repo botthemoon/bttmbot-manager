@@ -8,5 +8,5 @@ schedule
 datetime
 pymongo
 docker
-# passivbot
-# -r passivbot/requirements_liveonly.txt
+# bttmbot
+# -r bttmbot/requirements_liveonly.txt

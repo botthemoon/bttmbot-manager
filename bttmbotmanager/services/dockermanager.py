@@ -1,7 +1,7 @@
 import docker
 
-from passivbotmanager.services.logger import logger
-from passivbotmanager.settings import docker_image_tag
+from bttmbotmanager.services.logger import logger
+from bttmbotmanager.settings import docker_image_tag
 
 client = docker.from_env()
 
@@ -18,10 +18,10 @@ def is_image_created():
         logger.error(f"Docker API error{e}")
 
 
-def create_passivbot_image():
-    logger.info("Building Passivbot image...")
-    client.images.build(path="passivbot/", tag=docker_image_tag, nocache=True)
-    logger.info("Passivbot image created sucessfully")
+def create_bttmbot_image():
+    logger.info("Building bttmbot image...")
+    client.images.build(path="bttmbot/", tag=docker_image_tag, nocache=True)
+    logger.info("bttmbot image created sucessfully")
 
 
 def run_bot_container(env: dict, name: str):

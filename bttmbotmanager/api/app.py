@@ -1,6 +1,6 @@
 from flask_restplus import Resource, Namespace
 
-api = Namespace("passivbot", description="Passivbot manager generics endpoints")
+api = Namespace("bttmbot", description="bttmbot manager generics endpoints")
 
 
 @api.route("/health")

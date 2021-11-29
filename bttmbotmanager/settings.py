@@ -21,4 +21,4 @@ mongo_uri = env.str(
 )
 mongo_db = env.str("MONGO_DB", "bots")
 
-docker_image_tag = env.str("DOCKER_IMAGE_TAG", "passivbot-btm:5")
+docker_image_tag = env.str("DOCKER_IMAGE_TAG", "bttmbot:5")
