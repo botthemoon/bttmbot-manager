@@ -6,17 +6,17 @@ with open("requirements.txt") as f:
     requires.extend(f.read().splitlines())
     requires = requires[: len(requires) - 2]
 
-with open("bttmbot/requirements_liveonly.txt") as f:
-    requires_passivbot = f.read().splitlines()
-    requires.extend(requires_passivbot)
+# with open("bttmbot/requirements_liveonly.txt") as f:
+#     requires_bttmbot = f.read().splitlines()
+#     requires.extend(requires_bttmbot)
 
 setup(
-    name="passivbot-manager",
-    version="0.1.5",
-    description="Passivbot Manager Library",
+    name="bttmbot-manager",
+    version="0.2",
+    description="BTTMBot Manager Library",
     author="BTM",
     license="",
-    url="https://github.com/botthemoon/passivbot-manager",
+    url="https://github.com/botthemoon/bttmbot-manager",
     packages=find_packages(),
     install_requires=requires,
 )
